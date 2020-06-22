@@ -1,0 +1,7 @@
+C:\Users\mariu\Documents\GitHub\0622\Fibonacci numbers\Fibonacci numbers\bin\Debug\Fibonacci numbers.exe.config
+C:\Users\mariu\Documents\GitHub\0622\Fibonacci numbers\Fibonacci numbers\bin\Debug\Fibonacci numbers.exe
+C:\Users\mariu\Documents\GitHub\0622\Fibonacci numbers\Fibonacci numbers\bin\Debug\Fibonacci numbers.pdb
+C:\Users\mariu\Documents\GitHub\0622\Fibonacci numbers\Fibonacci numbers\obj\Debug\Fibonacci numbers.csprojAssemblyReference.cache
+C:\Users\mariu\Documents\GitHub\0622\Fibonacci numbers\Fibonacci numbers\obj\Debug\Fibonacci numbers.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Documents\GitHub\0622\Fibonacci numbers\Fibonacci numbers\obj\Debug\Fibonacci numbers.exe
+C:\Users\mariu\Documents\GitHub\0622\Fibonacci numbers\Fibonacci numbers\obj\Debug\Fibonacci numbers.pdb
