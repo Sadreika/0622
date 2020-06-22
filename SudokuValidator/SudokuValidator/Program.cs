@@ -23,7 +23,8 @@ namespace SudokuValidator
                                         {9, 6, 1, 5, 3, 7, 2, 8, 4},
                                         {2, 8, 7, 4, 1, 9, 6, 3, 5},
                                         {3, 4, 5, 2, 8, 6, 1, 7, 9}};
-            objectOfProgram.checking(array);
+            bool value = objectOfProgram.checking(array);
+            Console.WriteLine(value);
         }
 
         public int checkingIfAllFull(int[,] array)
@@ -111,10 +112,58 @@ namespace SudokuValidator
                 }
             }
 
+
+            for (int i = 3; i < 6; i = i + 1)
+            {
+                for (int j = 3; j < 6; j = j + 1)
+                {
+                    value = array[i, j];
+                    for (int x = i + 1; x < 6; x++)
+                    {
+                        if (value == array[x, i])
+                        {
+                            returningValue = 0;
+                        }
+                    }
+                    for (int z = j + 1; z < 6; z++)
+                    {
+                        if (value == array[i, z])
+                        {
+                            returningValue = 0;
+                        }
+                    }
+                }
+            }
+
+
+            for (int i = 6; i < 9; i = i + 1)
+            {
+                for (int j = 6; j < 9; j = j + 1)
+                {
+                    value = array[i, j];
+                    for (int x = i + 1; x < 9; x++)
+                    {
+                        if (value == array[x, i])
+                        {
+                            returningValue = 0;
+                        }
+                    }
+                    for (int z = j + 1; z < 9; z++)
+                    {
+                        if (value == array[i, z])
+                        {
+                            returningValue = 0;
+                        }
+                    }
+                }
+            }
+
+
             return returningValue;
         }
-        public void checking(int[,] array)
+        public bool checking(int[,] array)
         {
+            bool valuebool = false;
             int value = checkingIfAllFull(array);
             if(value == 1)
             {
@@ -124,23 +173,18 @@ namespace SudokuValidator
                 {
                     Console.WriteLine("Rows have diffrent elements");
                     int checkingColumnValue = checkingColumn(array);
-                    if(checkingRowsValue == 1)
+                    if (checkingRowsValue == 1)
                     {
                         Console.WriteLine("Columns have diffrent elements");
                         int checkingSquaresvalue = checkingSquares(array);
+                        if (checkingSquaresvalue == 1)
+                        {
+                            valuebool = true;
+                        }
                     }
                 }
-                
-
-                /*for (int i = 0; i < 9; i++)
-                {
-                    for (int j = 0; j < 9; j++)
-                    {
-                        // array[]
-                    }
-                }*/
             }
-            
+            return valuebool;
         }
     }
 }
